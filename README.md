@@ -1,6 +1,6 @@
 # Proyecto de Análisis de Datos de COVID-19
 
-![Icono del Proyecto](icon.webp)
+![Icono del Proyecto](icon.png)
 
 ## Descripción
 Este proyecto tiene como objetivo analizar los datos de COVID-19 para proporcionar información y visualizaciones. El conjunto de datos incluye información sobre casos de COVID-19, recuperaciones y muertes en diferentes regiones. El análisis ayudará a comprender la propagación y el impacto del virus.
