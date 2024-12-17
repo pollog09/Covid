@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads/'
 
 # Cargar el modelo
-model = torch.load('./models/vgg_canny.pth')
+model = torch.load('models/vgg_canny.pth')
 model.eval()
 
 # Transformaciones de la imagen
