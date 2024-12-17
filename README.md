@@ -2,6 +2,10 @@
 
 ![Icono del Proyecto](icon.png)
 
+> **IMPORTANTE**
+> Los modelos y el dataset no se inlcuyen en el repositorio debido a limitaciones de github sobre el tamaño de los archivos. En el archivo [text](ImagePreparation.ipynb) y [text](ModelTraining.ipynb) se pueden descargar y entrenar los modelos necesarios.
+
+
 ## Descripción
 Este proyecto tiene como objetivo analizar los datos de COVID-19 para proporcionar información y visualizaciones. El conjunto de datos incluye información sobre casos de COVID-19, recuperaciones y muertes en diferentes regiones. El análisis ayudará a comprender la propagación y el impacto del virus.
 
