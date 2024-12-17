@@ -33,3 +33,11 @@ Ejecuta el script de para comprobar si se utiliza el gpu:
 ```bash
 python check_gpu.py
 ```
+
+#### Paso 5: Levantar frontend application
+
+```bash
+cd covid/frontend
+set FLASK_APP=app.py
+flask run
+```

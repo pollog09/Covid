@@ -2,3 +2,6 @@
 /dataset
 /*.pth
 /models/*.pth
+/.venv/*
+/.covid/*
+frontend/__pycache__/*

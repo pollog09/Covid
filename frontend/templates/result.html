@@ -1,13 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result</title>
-  </head>
-  <body>
-    <h1>Result</h1>
-    <p>Category: {{ category }}</p>
-    <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
-  </body>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Result</h1>
+        <p>The category of the uploaded file is: <strong>{{ category }}</strong></p>
+        <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image" class="uploaded-image">
+        <a href="/" class="btn">Upload Another File</a>
+    </div>
+</body>
 </html>
