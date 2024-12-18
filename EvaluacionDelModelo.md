@@ -9,27 +9,27 @@
 
 ### Training resnet on bilateral dataset
 
-![Imagen 4](res/78aec56af1eb068b4937f9dfd70b3c48.png)
+![Imagen 4](res/resnetbilateral.png)
 
 ### Training resnet on raw dataset
 
-![Imagen 5](res/af91e417609646e0f182f9adaa65435a.png)
+![Imagen 5](res/resnetraw.png)
 
 ## Training resnet on canny dataset
-
-![Imagen 6](res/e24ebd2441f59635c1c8bc3c157ca035.png)
+e
+![Imagen 6](res/resnetcanny.png)
 
 ### Training vgg on bilateral dataset
 
-![Imagen 7](res/4f1096c65965f0483aa486c8db551f4a.png)
+![Imagen 7](res/vggbilateral.png)
 
 ### Training vgg on raw dataset
 
-![Imagen 8](res/a11da7a48f6015574a8edfd886d72b35.png)
+![Imagen 8](res/vggraw.png)
 
 ### Training vgg on canny dataset
 
-![Imagen 9](res/617b1f76f970bacfcee55123b7cc5d16.png)
+![Imagen 9](res/vggcanny.png)
 
 ## Justificación de la Elección del Modelo VGG con el Filtro de Canny
 

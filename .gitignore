@@ -6,3 +6,5 @@
 /.covid/*
 frontend/__pycache__/*
 frontend/static/uploads/*
+.covid/*
+covid/*
