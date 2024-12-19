@@ -25,22 +25,17 @@ e
 
 ## Justificación de la Elección del Modelo VGG con el Filtro de Canny
 
-La elección del modelo adecuado para resolver un problema de clasificación depende de métricas específicas, como precisión, recall, F1-Score y análisis de la matriz de confusión. En este caso, el modelo VGG con el filtro de Canny ha demostrado un desempeño superior en comparación con otros modelos evaluados.
+En nuestro proyecto, hemos evaluado diferentes modelos de inteligencia artificial para el procesamiento de imágenes, y hemos encontrado que el modelo VGG combinado con el filtro de Canny ha proporcionado los mejores resultados.
 
-Al aplicar el filtro de Canny a los datos de entrada y utilizar la arquitectura VGG, se observaron las siguientes mejoras significativas:
+### Resultados de Precisión
+El modelo VGG con Canny ha alcanzado una precisión impresionante del 95% en un conjunto de datos de 1809 imágenes. A continuación, se detallan las métricas obtenidas:
 
-Mayor Precisión General: El modelo logra una precisión elevada, lo que indica que predice correctamente la mayoría de las clases. Esto se evidencia en la diagonal principal de la matriz de confusión, donde se encuentran la mayoría de los aciertos.
+- Precisión (accuracy): 0.95
+- Promedio macro (macro avg): 0.94 (precisión), 0.95 (recall), 0.94 (f1-score)
+- Promedio ponderado (weighted avg): 0.95 (precisión), 0.95 (recall), 0.95 (f1-score)
 
-Reducción de Falsos Negativos: La combinación de VGG con el filtro de Canny disminuyó considerablemente los falsos negativos, como se aprecia en la matriz de confusión. Esto es crucial en problemas donde es más costoso no detectar una clase importante.
-
-Mejor F1-Score: El F1-Score balanceado muestra que el modelo mantiene un equilibrio entre la precisión (precision) y el recall. Esto es especialmente valioso para evitar un sesgo hacia clases mayoritarias.
-
-El filtro de Canny actúa como una etapa de preprocesamiento que resalta los bordes en las imágenes. Esto aporta los siguientes beneficios:
-
-Reducción de Ruido: Al resaltar las características relevantes (bordes), se reduce la información innecesaria, facilitando la tarea del modelo para identificar patrones importantes.
-Mejor Representación de los Datos: El filtro proporciona imágenes más simples y enfocadas en las características clave, lo que mejora el desempeño del modelo VGG.
-
-La arquitectura VGG es conocida por su capacidad de capturar características profundas en imágenes debido a su uso de múltiples capas convolucionales.
+### Análisis de Resultados
+Estos resultados indican que el modelo no solo es altamente preciso, sino que también mantiene un equilibrio adecuado entre precisión y recall, lo que es crucial para aplicaciones prácticas. El uso del filtro de Canny ha mejorado significativamente la capacidad del modelo para detectar bordes y características importantes en las imágenes, lo que ha contribuido a su alta precision.
 
 ## TL;TR
-La combinación del modelo VGG con el filtro de Canny ofrece un equilibrio óptimo entre precisión, recall y generalización. Su capacidad para reducir el ruido en las imágenes y extraer características clave permite obtener predicciones más precisas, convirtiéndolo en la mejor opción para el problema evaluado.
+En resumen, la combinación del modelo VGG con el filtro de Canny ha demostrado ser una elección excelente para nuestro proyecto, proporcionando resultados consistentes y de alta calidad. Esto nos da confianza en la robustez y fiabilidad del modelo para tareas de procesamiento de imágenes en el futuro.
