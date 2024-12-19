@@ -2,16 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            color: #666;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-container div {
+            flex: 1 1 30%;
+            max-width: 30%;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        h2 {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Result</h1>
-        <p>The category of the uploaded file is: <strong>{{ category }}</strong></p>
-        <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image" class="uploaded-image">
-        <a href="/" class="btn">Upload Another File</a>
+    <h1>Classification Result</h1>
+    <p>Category: {{ category }}</p>
+    <div class="image-container">
+        <div>
+            <h2>Uploaded Image</h2>
+            <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+        </div>
+        <div>
+            <h2>Saliency Map</h2>
+            <img src="{{ url_for('static', filename='uploads/' + saliency_path.split('/')[-1]) }}" alt="Saliency Map">
+        </div>
+        <div>
+            <h2>Canny Edge Filtered Image</h2>
+            <img src="{{ url_for('static', filename='uploads/' + canny_path.split('/')[-1]) }}" alt="Canny Edge Filtered Image">
+        </div>
     </div>
 </body>
 </html>

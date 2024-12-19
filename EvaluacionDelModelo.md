@@ -1,11 +1,3 @@
-## Antes del Ajuste
-
-![Imagen 1](res/77b05bb32d6bd3ec9c1ef9993959b8d8.png)
-
-![Imagen 2](res/1b92e05a4b11412a567b3d6056faf5e9.png)
-![Imagen 3](res/9aa0fabcf17384906d8600c62bab5861.png)
-
-## Despues del Ajuste
 
 ### Training resnet on bilateral dataset
 
